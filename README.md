@@ -2,6 +2,7 @@ DeliveryLightsDoku
 ==================
 
 Shopware Plugin to define different state of delivery
+Comming Soon at Shopware Community Store
 
 # Vorwort
 Das Plugin “DeliveryLights” ist für die Darstellung des Lieferbarkeitsstatus / der Möglichkeit der Bestellung eines Artikels zuständig. 
