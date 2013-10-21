@@ -20,6 +20,7 @@ Erweiterung des standardmäßig vorhandenen Abbilden eines Lieferstatus, damit d
 
 # Einstellungen
 ## Grundeinstellungen des Plugins
+![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/grundeinstellungen.png)
 * Rote Grenze in Tagen = Artikel ist maximal x Tage verfügbar für Status rot
 * Gelbe Grenze in Tagen = Artikel ist maximal x Tage verfügbar für Status gelb
 * Rote Grenze in Stück = Artikel ist maximal x Stück verfügbar für Status rot
@@ -30,6 +31,7 @@ Erweiterung des standardmäßig vorhandenen Abbilden eines Lieferstatus, damit d
 * Bezeichnung Status grün = Textausgabe, wenn Artikel Status rot erreicht
 
 ## Einstellungen beim Artikel
+![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/artikeleinstellungen.png)
 * Bestellbar = regelt ob ein Artikel bestellbar ist, wenn er aktiv ist
 * Bestellung vor Einführung = regelt ob ein Artikel vor dem Einführungsdatum bestellt werden kann
 * Eigenene Einstellungen für Artikel = legt fest, ob die globalen Einstellungen für Grenzen und Texte durch lokale überschrieben werden sollen
