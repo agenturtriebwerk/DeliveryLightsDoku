@@ -47,3 +47,19 @@ Erweiterung des standardmäßig vorhandenen Abbilden eines Lieferstatus, damit d
 ## Cron-Job
 * berechnet den durchschnittlichen Verkauf der Artikel in den letzten 365 Tagen und aktualisiert die Tagesentnahme in den Einstellungen eines Artikels
 * wird automatisch in den Systemgrundeinstellungen > Cronjobs angelegt und muss nur noch aktiviert werden
+
+# Konfigurationsbeispiele
+![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/status_gruen.png)
+* Artikel ist verfügbar und hat keine Lieferzeit
+ 
+![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/status_gruen_lieferzeit.png)
+* Artikel ist verfügbar und hat eine Lieferzeit von 10 Tagen
+ 
+![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/status_gelb.png)
+* Artikel ist verfügbar und hat einen Lagerbestand von 20 bei einer Grenze für Gelb bei 50 und Rot bei 0
+ 
+![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/status_schwarz.png)
+* Artikel ist ab dem 11.11.2013 verfügbar, Bestellung vor Einführung ist deaktiviert
+ 
+
+
