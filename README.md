@@ -1,65 +1,94 @@
-DeliveryLightsDoku
+Lieferampel Dokumentation (DeliveryLights)
 ==================
 
-Shopware Plugin to define different state of delivery
-* Comming Soon at Shopware Community Store
+Die Lieferampel ist ein Shopware-Plugin und kann über den Shopware Community Store bezogen werden: 
+Beschreibung und Download im Shopware Community Store
 
-# Vorwort
-Das Plugin “DeliveryLights” ist für die Darstellung des Lieferbarkeitsstatus / der Möglichkeit der Bestellung eines Artikels zuständig. 
+# Beschreibung
+Mit dem Plugin "Lieferampel" wird die Darstellung von Lieferbarkeit erweitert und die Steuerung der Anzeige erleichtert.
 
-Es können Ausgabetexte für die Stati grün (Artikel ist bestellbar und viele Artikel sind vorhanden), gelb (Artikel ist bestellbar und der Bestand ist gering), rot (Artikel ist bestellbar und Bestand hat nur noch Restmengen) und schwarz (Artikel ist nicht bestellbar, weil: Bestellung deaktiviert, nicht vor Erscheinungsdatum zu verkaufen, keine Unterschreitung der Lagermenge 0 erlaubt).
 
-Weiterhin können Grenzen für die Stati gelb und rot eingestellt werden, die erreicht werden müssen um diesen Status zu bekommen. 
+# Installation
+## Manueller Upload
+1. Extrahieren Sie die Inhalte aus der heruntergeladenen ZIP-Datei
+2. Laden Sie den Ordner /TriebwDeliveryLights per FTP auf Ihren Webserver in den Ordner /engine/Shopware/Plugins/Local/Backend/.
+3. Loggen Sie sich nun in Ihr Shopware-Backend ein.
+4. Wählen Sie „Einstellungen“ -> „Plugin-Manager“.
+5. Wählen Sie im „Plugin-Manager“ im linken Menü „Alle Erweiterungen“.
+6. Suchen Sie in der Auflistung der „inaktiven Plugins“ nach „Lieferampel“.
+7. Klicken Sie in der Zeile von „Lieferampel“ rechts auf das grüne Symbol. Das Plugin wird jetzt installiert. Wenn die Installation abgeschlossen ist, erscheint rechts oben im Backend eine Info dass das Plugin erfolgreich installiert wurde.
+8. Im nun sich öffnenden Popup wählen Sie „Plugin aktivieren“, nehmen die gewünschten Grundeinstellungen vor und klicken auf "Plugin-Einstellungen speichern"
 
-In der Statusanzeige beim Artikel wird entsprechend der „schlechteste“ erreichte Status ausgegeben.
-Schwarz > Rot > Gelb > Grün
-Ist bei einem Artikel eine Lieferzeit eingegeben, so wird diese zusätzlich beim Lieferstatus angezeigt.
 
-# Hauptfunktion
-Erweiterung des standardmäßig vorhandenen Abbilden eines Lieferstatus, damit dieser durch den Shopbetreiber flexibler und klarer abgebildet werden kann
+## Installation über den Community Store
+1. Loggen Sie sich nun in Ihr Shopware-Backend ein.
+2. Wählen Sie „Einstellungen“ -> „Plugin-Manager“.
+3. Wählen Sie den Tab "Community Store" und suchen " Lieferampel "
+4. Laden Sie das Plugin in Ihr System
+5. Öffnen Sie im Plugin-Manager den Tab "Einkäufe / Erweiterung" und folgen dem manuellen Upload ab Schritt 5
 
-# Einstellungen
-## Grundeinstellungen des Plugins
-![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/grundeinstellungen.png)
-* Rote Grenze in Tagen = Artikel ist maximal x Tage verfügbar für Status rot
-* Gelbe Grenze in Tagen = Artikel ist maximal x Tage verfügbar für Status gelb
-* Rote Grenze in Stück = Artikel ist maximal x Stück verfügbar für Status rot
-* Gelbe Grenze in Stück = Artikel ist maximal x Stück verfügbar für Status gelb
-* Bezeichnung Status schwarz = Textausgabe, wenn Artikel nicht bestellbar
-* Bezeichnung Status rot = Textausgabe, wenn Artikel Status rot erreicht
-* Bezeichnung Status gelb = Textausgabe, wenn Artikel Status gelb erreicht
-* Bezeichnung Status grün = Textausgabe, wenn Artikel Status rot erreicht
 
-## Einstellungen beim Artikel
-![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/artikeleinstellungen.png)
-* Bestellbar = regelt ob ein Artikel bestellbar ist, wenn er aktiv ist
-* Bestellung vor Einführung = regelt ob ein Artikel vor dem Einführungsdatum bestellt werden kann
-* Eigenene Einstellungen für Artikel = legt fest, ob die globalen Einstellungen für Grenzen und Texte durch lokale überschrieben werden sollen
-* Tagesentnahme = täglicher Verkauf des Artikels im Schnitt der letzten 365 Tage, Grundlage für Tagesgrenzen
-* Rote Grenze in Tagen = Artikel ist maximal x Tage verfügbar für Status rot
-* Gelbe Grenze in Tagen = Artikel ist maximal x Tage verfügbar für Status gelb
-* Rote Grenze in Stück = Artikel ist maximal x Stück verfügbar für Status rot
-* Gelbe Grenze in Stück = Artikel ist maximal x Stück verfügbar für Status gelb
-* Text rote Grenze = Textausgabe, wenn Artikel Status rot erreicht
-* Text gelbe Grenze = Textausgabe, wenn Artikel Status gelb erreicht
-* Text grüne Grenze = Textausgabe, wenn Artikel Status grün erreicht
+## Konfiguration des Plugins
+1. Öffnen Sie die Grundeinstellungen und wählen dort "Weitere Einstellungen" > " Lieferampel "
+2. Nehmen Sie die gewünschten Anpassungen vor und klicken auf "Speichern"
+3. Um die Berechnung des Tagesentnahme zu berechnen, aktivieren Sie die den Cron-Job in den Grundeinstellungen unter "System" > "Cronjobs"
 
-## Cron-Job
-* berechnet den durchschnittlichen Verkauf der Artikel in den letzten 365 Tagen und aktualisiert die Tagesentnahme in den Einstellungen eines Artikels
-* wird automatisch in den Systemgrundeinstellungen > Cronjobs angelegt und muss nur noch aktiviert werden
 
-# Konfigurationsbeispiele
-![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/status_gruen.png)
-* Artikel ist verfügbar und hat keine Lieferzeit
- 
-![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/status_gruen_lieferzeit.png)
-* Artikel ist verfügbar und hat eine Lieferzeit von 10 Tagen
- 
+# Plugin-Einstellungen
+![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/artikeleinstellungen_2.png)
+## Einstellungen
+* Steuerung über Tagesentnahme aktiv : ja/nein
+** Entscheiden Sie ob die Lieferampel die Tagesentnahme der Artikel berechnen soll und mit dieser Tagesentnahme und der vorgegebenen Artikelreichweite (in Tagen) die Anzeige gesteuert werden soll. Kann keine sinnvolle Tagesentnahme berechnet werden (zum Beispiel weil der Artikel noch nie verkauft wurde) greift die Lieferampel auf die eingestellten Lagerbestandsmengen als Steuerungsgröße zurück.
+* Artikel vor Einführungsdatum bestellbar: ja/nein
+** Entscheiden Sie ob Artikel vorbestellt, also vor dem "Erscheinungsdatum" (in den Stammdaten des Artikels) bestellt werden kann.
+
+
+## Einstellung für Rote Ampel: 
+![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/status_rot.png)
+* Artikelreichweite (in Tagen) mindestens: [Tage, ganze positive Zahl]
+** Bei Erreichen der hier festgelegten Grenzwerte wird die "Rote Ampel" angezeigt. Falls aktiv und berechnet hat die Berechnung über die Tagesentnahme Vorrang.
+* Lagerbestand (in Stück) mindestens: [Stück, ganze positive Zahl]
+** Bei Erreichen der hier festgelegten Grenzwerte wird die "Rote Ampel" angezeigt. Falls aktiv und berechnet hat die Berechnung über die Tagesentnahme Vorrang.
+* Beschreibung: [Text, maximal 48 Zeichen]
+** Neben der Ampelfarbe wird die erklärende Beschreibung als Text mit angezeigt.
+
+## Einstellung für Gelbe Ampel:
 ![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/status_gelb.png)
-* Artikel ist verfügbar und hat einen Lagerbestand von 20 bei einer Grenze für Gelb bei 50 und Rot bei 0
- 
+* Artikelreichweite (in Tagen) mindestens: [Tage]
+** Bei Erreichen der hier festgelegten Grenzwerte wird die "Gelbe Ampel" angezeigt. Falls aktiv und berechnet hat die Berechnung über die Tagesentnahme Vorrang. Die hier festgelegten Grenzwerte sollten über (großer als) denen der "Roten Ampel" liegen.
+* Lagerbestand (in Stück) mindestens: [Stück]
+** Bei Erreichen der hier festgelegten Grenzwerte wird die "Gelbe Ampel" angezeigt. Falls aktiv und berechnet hat die Berechnung über die Tagesentnahme Vorrang. Die hier festgelegten Grenzwerte sollten über (großer als) denen der "Roten Ampel" liegen.
+* Beschreibung: [Text, maximal 48 Zeichen]
+** Neben der Ampelfarbe wird die erklärende Beschreibung als Text mit angezeigt.
+
+## Einstellung für Grüne Ampel:
+![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/status_gruen.png)
+* Beschreibung: [Text, maximal 48 Zeichen]
+
+Neben der Ampelfarbe wird die erklärende Beschreibung als Text mit angezeigt. Für die "Grüne Ampel" müssen keine Grenzwerte angegeben werden. Sie sind über die Grenzwerte der "Gelben Ampel" definiert: liegt die Artikelreichweite bzw. der Lagerbestand über dem bei "Gelbe Ampel" festgelegten Grenzwert, wird die "Grüne Ampel" angezeigt. 
+
+Einstellung für „Nicht bestellbar“ :
 ![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/status_schwarz.png)
-* Artikel ist ab dem 11.11.2013 verfügbar, Bestellung vor Einführung ist deaktiviert
+•	Beschreibung: [Text, maximal 48 Zeichen]
+Diese erklärende Beschreibung wird angezeigt wenn ein Artikel nicht bestellbar ist, weil …
+a) er als Abverkaufs-Artikel gekennzeichnet ist und keinen Lagerbestand hat.
+b) das Erscheinungsdatum in der Zukunft liegt und der Artikel von dem Einführungsdatum als nicht bestellbar – über die Lieferampel –  gekennzeichnet ist.
+c) er manuell – über die Artikeldetails / Lieferampel – als nicht bestellbar gekennzeichnet wurde.
+
+# Artikel-Einstellungen
+![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/artikeleinstellungen_2.png)
+* Bestellbar: ja/nein
+** Ja ist die Standardeinstellung. Ein deaktivieren macht den Artikel nicht bestellbar, gleich ob er Lagerbestand hat oder nicht. Die Einstellungen im Hinblick auf Anzeige und Veröffentlichung aber nicht beeinflusst. 
+* Individuelle Einstellungen aktivieren: nein/ja
+** Nein ist die Standardeinstellung. Ein Aktivieren macht die Einstellungen in den Artikeldetails editierbar und überschreibt die Plugin-Einstellungen für diesen Artikel.
+
+# Versionshistorie
+0.9 Erste öffentliche Pluginversion
+
+# Unverträglichkeiten
+Hier werden die bekannten Unverträglichkeiten gelistet.
+Wenn Sie Fragen zur Plugin-Verträglichkeit von Lieferampel haben, kontaktieren Sie gerne vorab unseren Support: shopware@agentur-triebwerk.de
+- keine Unverträglichkeiten bekannt
  
 
 
