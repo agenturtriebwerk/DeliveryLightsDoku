@@ -71,9 +71,9 @@ Einstellung für „Nicht bestellbar“ :
 ![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/status_schwarz.png)
 •	Beschreibung: [Text, maximal 48 Zeichen]
 Diese erklärende Beschreibung wird angezeigt wenn ein Artikel nicht bestellbar ist, weil:
-  a) er als Abverkaufs-Artikel gekennzeichnet ist und keinen Lagerbestand hat.
-  b) das Erscheinungsdatum in der Zukunft liegt und der Artikel von dem Einführungsdatum als nicht bestellbar – über die Lieferampel –  gekennzeichnet ist.
-  c) er manuell – über die Artikeldetails / Lieferampel – als nicht bestellbar gekennzeichnet wurde.
+  * a) er als Abverkaufs-Artikel gekennzeichnet ist und keinen Lagerbestand hat.
+  * b) das Erscheinungsdatum in der Zukunft liegt und der Artikel von dem Einführungsdatum als nicht bestellbar – über die Lieferampel –  gekennzeichnet ist.
+  * c) er manuell – über die Artikeldetails / Lieferampel – als nicht bestellbar gekennzeichnet wurde.
 
 # Artikel-Einstellungen
 ![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/artikeleinstellungen_2.png)
