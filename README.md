@@ -67,7 +67,7 @@ Mit dem Plugin "Lieferampel" wird die Darstellung von Lieferbarkeit erweitert un
 
 Neben der Ampelfarbe wird die erklärende Beschreibung als Text mit angezeigt. Für die "Grüne Ampel" müssen keine Grenzwerte angegeben werden. Sie sind über die Grenzwerte der "Gelben Ampel" definiert: liegt die Artikelreichweite bzw. der Lagerbestand über dem bei "Gelbe Ampel" festgelegten Grenzwert, wird die "Grüne Ampel" angezeigt. 
 
-Einstellung für „Nicht bestellbar“ :
+## Einstellung für „Nicht bestellbar“ :
 ![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/status_schwarz.png)
 •	Beschreibung: [Text, maximal 48 Zeichen]
 Diese erklärende Beschreibung wird angezeigt wenn ein Artikel nicht bestellbar ist, weil:
