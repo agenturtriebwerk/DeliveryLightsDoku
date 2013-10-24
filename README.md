@@ -38,9 +38,9 @@ Mit dem Plugin "Lieferampel" wird die Darstellung von Lieferbarkeit erweitert un
 ![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/artikeleinstellungen_2.png)
 ## Einstellungen
 * Steuerung über Tagesentnahme aktiv : ja/nein
-** Entscheiden Sie ob die Lieferampel die Tagesentnahme der Artikel berechnen soll und mit dieser Tagesentnahme und der vorgegebenen Artikelreichweite (in Tagen) die Anzeige gesteuert werden soll. Kann keine sinnvolle Tagesentnahme berechnet werden (zum Beispiel weil der Artikel noch nie verkauft wurde) greift die Lieferampel auf die eingestellten Lagerbestandsmengen als Steuerungsgröße zurück.
+  * Entscheiden Sie ob die Lieferampel die Tagesentnahme der Artikel berechnen soll und mit dieser Tagesentnahme und der vorgegebenen Artikelreichweite (in Tagen) die Anzeige gesteuert werden soll. Kann keine sinnvolle Tagesentnahme berechnet werden (zum Beispiel weil der Artikel noch nie verkauft wurde) greift die Lieferampel auf die eingestellten Lagerbestandsmengen als Steuerungsgröße zurück.
 * Artikel vor Einführungsdatum bestellbar: ja/nein
-** Entscheiden Sie ob Artikel vorbestellt, also vor dem "Erscheinungsdatum" (in den Stammdaten des Artikels) bestellt werden kann.
+  * Entscheiden Sie ob Artikel vorbestellt, also vor dem "Erscheinungsdatum" (in den Stammdaten des Artikels) bestellt werden kann.
 
 
 ## Einstellung für Rote Ampel: 
@@ -55,11 +55,11 @@ Mit dem Plugin "Lieferampel" wird die Darstellung von Lieferbarkeit erweitert un
 ## Einstellung für Gelbe Ampel:
 ![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/status_gelb.png)
 * Artikelreichweite (in Tagen) mindestens: [Tage]
-** Bei Erreichen der hier festgelegten Grenzwerte wird die "Gelbe Ampel" angezeigt. Falls aktiv und berechnet hat die Berechnung über die Tagesentnahme Vorrang. Die hier festgelegten Grenzwerte sollten über (großer als) denen der "Roten Ampel" liegen.
+  * Bei Erreichen der hier festgelegten Grenzwerte wird die "Gelbe Ampel" angezeigt. Falls aktiv und berechnet hat die Berechnung über die Tagesentnahme Vorrang. Die hier festgelegten Grenzwerte sollten über (großer als) denen der "Roten Ampel" liegen.
 * Lagerbestand (in Stück) mindestens: [Stück]
-** Bei Erreichen der hier festgelegten Grenzwerte wird die "Gelbe Ampel" angezeigt. Falls aktiv und berechnet hat die Berechnung über die Tagesentnahme Vorrang. Die hier festgelegten Grenzwerte sollten über (großer als) denen der "Roten Ampel" liegen.
+  * Bei Erreichen der hier festgelegten Grenzwerte wird die "Gelbe Ampel" angezeigt. Falls aktiv und berechnet hat die Berechnung über die Tagesentnahme Vorrang. Die hier festgelegten Grenzwerte sollten über (großer als) denen der "Roten Ampel" liegen.
 * Beschreibung: [Text, maximal 48 Zeichen]
-** Neben der Ampelfarbe wird die erklärende Beschreibung als Text mit angezeigt.
+  * Neben der Ampelfarbe wird die erklärende Beschreibung als Text mit angezeigt.
 
 ## Einstellung für Grüne Ampel:
 ![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/status_gruen.png)
@@ -78,9 +78,9 @@ c) er manuell – über die Artikeldetails / Lieferampel – als nicht bestellba
 # Artikel-Einstellungen
 ![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/artikeleinstellungen_2.png)
 * Bestellbar: ja/nein
-** Ja ist die Standardeinstellung. Ein deaktivieren macht den Artikel nicht bestellbar, gleich ob er Lagerbestand hat oder nicht. Die Einstellungen im Hinblick auf Anzeige und Veröffentlichung aber nicht beeinflusst. 
+  * Ja ist die Standardeinstellung. Ein deaktivieren macht den Artikel nicht bestellbar, gleich ob er Lagerbestand hat oder nicht. Die Einstellungen im Hinblick auf Anzeige und Veröffentlichung aber nicht beeinflusst. 
 * Individuelle Einstellungen aktivieren: nein/ja
-** Nein ist die Standardeinstellung. Ein Aktivieren macht die Einstellungen in den Artikeldetails editierbar und überschreibt die Plugin-Einstellungen für diesen Artikel.
+  * Nein ist die Standardeinstellung. Ein Aktivieren macht die Einstellungen in den Artikeldetails editierbar und überschreibt die Plugin-Einstellungen für diesen Artikel.
 
 # Versionshistorie
 0.9 Erste öffentliche Pluginversion
