@@ -46,7 +46,7 @@ Mit dem Plugin "Lieferampel" wird die Darstellung von Lieferbarkeit erweitert un
 ## Einstellung für Rote Ampel: 
 ![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/status_rot.png)
 * Artikelreichweite (in Tagen) mindestens: [Tage, ganze positive Zahl]
-** Bei Erreichen der hier festgelegten Grenzwerte wird die "Rote Ampel" angezeigt. Falls aktiv und berechnet hat die Berechnung über die Tagesentnahme Vorrang.
+* * Bei Erreichen der hier festgelegten Grenzwerte wird die "Rote Ampel" angezeigt. Falls aktiv und berechnet hat die Berechnung über die Tagesentnahme Vorrang.
 * Lagerbestand (in Stück) mindestens: [Stück, ganze positive Zahl]
 ** Bei Erreichen der hier festgelegten Grenzwerte wird die "Rote Ampel" angezeigt. Falls aktiv und berechnet hat die Berechnung über die Tagesentnahme Vorrang.
 * Beschreibung: [Text, maximal 48 Zeichen]
