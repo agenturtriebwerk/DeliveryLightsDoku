@@ -35,7 +35,7 @@ Mit dem Plugin „Lieferampel“ wird die Darstellung von Lieferbarkeit erweiter
 
 
 # Plugin-Einstellungen
-![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/artikeleinstellungen_2.png)
+![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/grundeinstellungen_2.png)
 ## Einstellungen
 * Steuerung über Tagesentnahme aktiv : ja/nein
   * Entscheiden Sie, ob die Lieferampel die Tagesentnahme der Artikel berechnen soll und mit dieser Tagesentnahme und der vorgegebenen Artikelreichweite (in Tagen) die Anzeige gesteuert werden soll. Kann keine sinnvolle Tagesentnahme berechnet werden (zum Beispiel weil der Artikel noch nie verkauft wurde), greift die Lieferampel auf die eingestellten Lagerbestandsmengen als Steuerungsgröße zurück.
