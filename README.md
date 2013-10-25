@@ -39,6 +39,7 @@ Mit dem Plugin „Lieferampel“ wird die Darstellung von Lieferbarkeit erweiter
 ## Einstellungen
 * Steuerung über Tagesentnahme aktiv : ja/nein
   * Entscheiden Sie, ob die Lieferampel die Tagesentnahme der Artikel berechnen soll und mit dieser Tagesentnahme und der vorgegebenen Artikelreichweite (in Tagen) die Anzeige gesteuert werden soll. Kann keine sinnvolle Tagesentnahme berechnet werden (zum Beispiel weil der Artikel noch nie verkauft wurde), greift die Lieferampel auf die eingestellten Lagerbestandsmengen als Steuerungsgröße zurück.
+
 * Artikel vor Einführungsdatum bestellbar: ja/nein
   * Entscheiden Sie, ob Artikel vorbestellt, also vor dem „Erscheinungsdatum“ (in den Stammdaten des Artikels) bestellt werden kann.
 
@@ -47,8 +48,10 @@ Mit dem Plugin „Lieferampel“ wird die Darstellung von Lieferbarkeit erweiter
 ![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/status_rot.png)
 * Artikelreichweite (in Tagen) mindestens: [Tage, ganze positive Zahl]
   * Bei Erreichen der hier festgelegten Grenzwerte wird die „Rote Ampel“ angezeigt. Falls aktiv und berechnet, hat die Berechnung über die Tagesentnahme Vorrang.
+
 * Lagerbestand (in Stück) mindestens: [Stück, ganze positive Zahl]
   * Bei Erreichen der hier festgelegten Grenzwerte wird die „Rote Ampel“ angezeigt. Falls aktiv und berechnet, hat die Berechnung über die Tagesentnahme Vorrang.
+
 * Beschreibung: [Text, maximal 48 Zeichen]
   * Neben der Ampelfarbe wird die erklärende Beschreibung als Text mit angezeigt.
 
@@ -56,8 +59,10 @@ Mit dem Plugin „Lieferampel“ wird die Darstellung von Lieferbarkeit erweiter
 ![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/status_gelb.png)
 * Artikelreichweite (in Tagen) mindestens: [Tage]
   * Bei Erreichen der hier festgelegten Grenzwerte wird die „Gelbe Ampel“ angezeigt. Falls aktiv und berechnet, hat die Berechnung über die Tagesentnahme Vorrang. Die hier festgelegten Grenzwerte sollten über (großer als) denen der „Roten Ampel“ liegen.
+
 * Lagerbestand (in Stück) mindestens: [Stück]
   * Bei Erreichen der hier festgelegten Grenzwerte wird die „Gelbe Ampel“ angezeigt. Falls aktiv und berechnet, hat die Berechnung über die Tagesentnahme Vorrang. Die hier festgelegten Grenzwerte sollten über (großer als) denen der „Roten Ampel“ liegen.
+
 * Beschreibung: [Text, maximal 48 Zeichen]
   * Neben der Ampelfarbe wird die erklärende Beschreibung als Text mit angezeigt.
 
@@ -79,6 +84,7 @@ Neben der Ampelfarbe wird die erklärende Beschreibung als Text mit angezeigt. F
 ![Grundeinstellungen](http://doku.agentur-triebwerk-shop.de/deliverylights/artikeleinstellungen_2.png)
 * bestellbar: ja/nein
   * Ja ist die Standardeinstellung. Ein Deaktivieren macht den Artikel „nicht bestellbar“, gleich ob er Lagerbestand hat oder nicht. Die Einstellungen im Hinblick auf Anzeige und Veröffentlichung werden aber nicht beeinflusst. 
+
 * individuelle Einstellungen aktivieren: nein/ja
   * „Nein“ ist die Standardeinstellung. Ein Aktivieren macht die Einstellungen in den Artikeldetails editierbar und überschreibt die Plugin-Einstellungen für diesen Artikel.
 
